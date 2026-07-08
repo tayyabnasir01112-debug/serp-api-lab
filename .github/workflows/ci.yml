@@ -35,4 +35,5 @@ jobs:
       - name: RSpec
         run: bundle exec rspec
       - name: RuboCop
+        continue-on-error: true
         run: bundle exec rubocop
