@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require "fileutils"
+
+system("bundle install") || abort("bundle install failed")
+system("bundle exec rails db:prepare") || abort("database setup failed")
+puts "serp-api-lab is ready."
